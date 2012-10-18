@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Rwedding::Application.load_tasks
+RailsRwedding::Application.load_tasks
