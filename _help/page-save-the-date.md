@@ -1,6 +1,20 @@
 
 # Save the Date
 
+## TODO
+example save the date email:
+http://pinkargyle.blogspot.ca/2009/09/our-save-dates-with-mailchimp.html
+website example:
+http://stephdave.com/
+
+
+1) use Google forms to create list of people to send email to: fullname, emailaddress
+
+2) design email based off of mailchimp (maybe add tracking???)
+
+3) send email
+
+
 ![](http://rails-rwedding.dev/assets/save-the-date/savedate.jpg)
 
 ### simple green postcard
@@ -26,3 +40,7 @@ https://typekit.com/fonts/swingdancer
 http://www.lovevsdesign.com/digital-printing/wedding/save-the-dates/card-designs/floral-charm-save-the-date
 
 http://pinkargyle.blogspot.ca/2009/09/our-save-dates-with-mailchimp.html
+
+http://rails-rwedding.dev/assets/save-the-date/email.html
+
+http://rails-rwedding.dev/save-the-date
