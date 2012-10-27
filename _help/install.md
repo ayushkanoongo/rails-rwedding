@@ -10,6 +10,8 @@ http://refinerycms.com/guides/installation-prerequisites
 
 http://refinerycms.com/guides/getting-started
 
+http://toroid.org/ams/git-website-howto
+
 
 ## Ideas 
 
@@ -62,3 +64,7 @@ RewriteRule ^(.+) - [PT,L]
 # C.9 Warp speed to the proxy!
 RewriteRule ^.*?app2/(.*)$ http://127.0.0.1:8002/$1 [P,QSA,L]
 RewriteRule ^(.*)$ http://127.0.0.1:8001/$1 [P,QSA,L]
+
+
+
+git remote add origin ssh://andxyz@andxyz.com/users/home/andxyz/git/rwedding.git

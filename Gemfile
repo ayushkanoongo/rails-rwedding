@@ -7,6 +7,7 @@ gem 'rails', '~> 3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
+  gem 'rbenv-autohash'
   gem 'sqlite3'
   #gem 'guard'
   #gem 'guard-livereload'
@@ -42,8 +43,8 @@ gem 'jquery-rails', '~> 2.0.0'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn-rails'
-gem 'unicorn', '~> 4.3.0'
+# gem 'unicorn-rails'
+# gem 'unicorn', '~> 4.3.0'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -52,18 +53,18 @@ gem 'unicorn', '~> 4.3.0'
 # gem 'debugger'
 
 # a hook to rehash rbenv on gem installs
-gem 'rbenv-autohash'
+# 
 
 # Refinery CMS
 gem 'refinerycms', '~> 2.0.0'
 
 # Specify additional Refinery CMS Extensions here (all optional):
-gem 'refinerycms-i18n', '~> 2.0.0'
+#  gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 
 # andys stuff
-gem 'maruku'
+# gem 'maruku'
 
