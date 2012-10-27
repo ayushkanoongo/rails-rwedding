@@ -16,6 +16,10 @@ group :development, :test do
   #gem 'yajl-ruby'
 end
 
+group :production do
+  gem 'mongrel'
+end  
+
 
 # Gems used only for assets and not required
 # in production environments by default.
