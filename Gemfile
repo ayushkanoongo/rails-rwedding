@@ -25,7 +25,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'less-rails'
   #gem 'libv8'
-  gem 'therubyracer', :platforms => :ruby
+  #gem 'therubyracer', :platforms => :ruby
   gem 'less-rails-bootstrap'
   #gem 'twitter-bootstrap-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
