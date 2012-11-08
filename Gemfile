@@ -9,7 +9,13 @@ gem 'rails', '~> 3.2.8'
 group :development, :test do
   gem 'rbenv-autohash'
   gem 'sqlite3'
-  gem 'capistrano'
+
+  gem 'capistrano', '~> 2.5.3' 
+  # 'fast_remote_cache' when you get the change
+  # rails plugin install https://github.com/37signals/fast_remote_cache.git
+
+  gem 'unicorn-rails'
+
   #gem 'guard'
   #gem 'guard-livereload'
   #gem 'rack-livereload'
@@ -18,10 +24,11 @@ group :development, :test do
 end
 
 group :production do
+  # mongrel as app server
   #gem 'mongrel'
   #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
+
   # Use unicorn as the app server
-  gem 'unicorn-rails'
   gem 'unicorn', '~> 4.3.0'
   #gem 'capistrano-unicorn'
 end  
@@ -34,8 +41,9 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'less-rails'
   #gem 'libv8'
-  #gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer'
   gem 'less-rails-bootstrap'
+  gem 'turbo-sprockets-rails3'
   #gem 'twitter-bootstrap-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   
