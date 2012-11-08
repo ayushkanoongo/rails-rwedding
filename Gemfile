@@ -9,6 +9,7 @@ gem 'rails', '~> 3.2.8'
 group :development, :test do
   gem 'rbenv-autohash'
   gem 'sqlite3'
+  gem 'capistrano'
   #gem 'guard'
   #gem 'guard-livereload'
   #gem 'rack-livereload'
@@ -17,9 +18,13 @@ group :development, :test do
 end
 
 group :production do
-  gem 'mongrel'
+  #gem 'mongrel'
+  #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
+  # Use unicorn as the app server
+  gem 'unicorn-rails'
+  gem 'unicorn', '~> 4.3.0'
+  #gem 'capistrano-unicorn'
 end  
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -45,10 +50,6 @@ gem 'jquery-rails', '~> 2.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn-rails'
-# gem 'unicorn', '~> 4.3.0'
 
 # Deploy with Capistrano
 # gem 'capistrano'
