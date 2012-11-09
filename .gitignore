@@ -8,12 +8,12 @@
 /.bundle
 /.bin
 
-#dont save passwords in repo
-config/database.yml
+# dont save passwords in repo
+#config/database.yml
 
 /vendor
 
-# assets
+# assets let the precompile happen serverside
 .sass-cache/
 /public/assets
 

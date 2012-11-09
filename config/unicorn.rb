@@ -21,12 +21,12 @@ worker_processes 4
 
 # Help ensure your application will always spawn in the symlinked
 # "current" directory that Capistrano sets up.
-APP_PATH = "/Users/andxyz/code/rails-rwedding"
+APP_PATH = "/home/wedding/website/current/"
 working_directory APP_PATH # available in 0.94.0+
 
 # listen on both a Unix domain socket and a TCP port,
 # we use a shorter backlog for quicker failover when busy
-listen "/tmp/wedding.andxyz.com.sock", :backlog => 64
+listen "/tmp/wedding.andxyz.com.socket", :backlog => 64
 listen 8080, :tcp_nopush => true
 
 # nuke workers after 30 seconds instead of 60 seconds (the default)
@@ -38,8 +38,8 @@ pid APP_PATH + "/shared/pids/unicorn.pid"
 # By default, the Unicorn logger will write to stderr.
 # Additionally, ome applications/frameworks log to stderr or stdout,
 # so prevent them from going to /dev/null when daemonized here:
-stderr_path APP_PATH + "/shared/log/unicorn.stderr.log"
-stdout_path APP_PATH + "/shared/log/unicorn.stdout.log"
+stderr_path APP_PATH + "/log/unicorn.stderr.log"
+stdout_path APP_PATH + "/log/unicorn.stdout.log"
 
 # combine Ruby 2.0.0dev or REE with "preload_app true" for memory savings
 # http://rubyenterpriseedition.com/faq.html#adapt_apps_for_cow
