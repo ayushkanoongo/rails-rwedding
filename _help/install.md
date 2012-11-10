@@ -30,6 +30,9 @@ http://refinerycms.com/guides/installation-prerequisites
 http://refinerycms.com/guides/getting-started
 http://toroid.org/ams/git-website-howto
 
+## check the memory usage
+free -m
+ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
 
 
 ## Mongrel hell on joyent

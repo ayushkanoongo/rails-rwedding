@@ -3,11 +3,24 @@
     <div class="span12">
       <div class="homecontent">
         <%= 
-          require 'maruku'
-          require 'tilt'
-          template = Tilt::MarukuTemplate.new { @page.content_for(:body) }
+          # require 'maruku'
+          # require 'tilt'
+          # template = Tilt::MarukuTemplate.new { @page.content_for(:body) }
+          # output = template.render
+          # raw output
+  
+          #require 'glorify'
+          #raw Redcarpet::Markdown.new(Glorify::Renderer.new, Glorify::EXTENSIONS).render(text)
+          text = @page.content_for(:body)
+          options = { :filter_html => true,
+                      :autolink => true,
+                      :no_intra_emphasis => true,
+                      :fenced_code_blocks => true
+                    } 
+          template = Tilt::RedcarpetTemplate.new(nil, options) { text }
           output = template.render
           raw output
+
         %>
       </div>
     </div>
