@@ -64,7 +64,8 @@ namespace :deploy do
 	task :stop do ; end
 
 	task :restart, :roles => :app, :except => { :no_release => true } do 
-		run "#{try_sudo} service unicorn-wedding restart"
+		#run "#{try_sudo} service unicorn-wedding restart"
+		run "service unicorn-wedding restart"
 	end
 # passenger restart
 #   task :restart, :roles => :app, :except => { :no_release => true } do
