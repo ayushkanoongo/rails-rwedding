@@ -4,9 +4,10 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile ~/.gitignore_global
 
-# Ignore bundler config
+# Ignore bundler configs and such
 /.bundle
 /.bin
+/Gemfile.lock
 
 # dont save passwords in repo
 #config/database.yml

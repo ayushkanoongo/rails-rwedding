@@ -16,7 +16,7 @@ group :development, :test do
   # 'fast_remote_cache' when you get the change
   # rails plugin install https://github.com/37signals/fast_remote_cache.git
 
-  gem 'unicorn-rails'
+  gem 'unicorn', '~> 4.3.0'
 
   #gem 'guard'
   #gem 'guard-livereload'
@@ -29,7 +29,6 @@ group :production do
   # mongrel as app server
   #gem 'mongrel'
   #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
-  gem 'sqlite3'
   gem 'pg'
 
   # Use unicorn as the app server
