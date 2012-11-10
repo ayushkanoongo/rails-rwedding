@@ -12,6 +12,8 @@ http://henriksjokvist.net/archive/2012/2/deploying-with-rbenv-and-capistrano/
 http://ariejan.net/2011/09/14/lighting-fast-zero-downtime-deployments-with-git-capistrano-nginx-and-unicorn
 http://github.com/blog/517-unicorn
 http://github.com/blog/470-deployment-script-spring-cleaning
+# gemfiles and bundler is crazy see deploy.rb for other magic with rbenv
+http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
 
 ### how I deployed rwedding the first time
 	$ bundle exec cap deploy:setup
@@ -19,6 +21,8 @@ http://github.com/blog/470-deployment-script-spring-cleaning
 	$ sudo chgrp -R staff /home/wedding/website/
 	$ bundle exec cap deploy
 	$ scp /Users/andxyz/code/rails-rwedding/db/development.sqlite3 wedding@deploy.andxyz.com:/home/wedding/website/current/db/production.sqlite3
+	$ RAILS_ENV=production bundle exec rake db:migrate
+	$ RAILS_ENV=production bundle exec rake db:seed
 
 ### help files
 http://37signals.com/svn/posts/2998-setting-up-a-new-machine-for-ruby-development

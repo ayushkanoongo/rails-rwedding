@@ -21,6 +21,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
+  host: localhost
   database: wedding
   username: weddinguser
   password: wedding

@@ -1,6 +1,8 @@
 require "bundler/capistrano"
 # bundle magic for rbenv to work see bin/bundle also
-set :bundle_flags, "--deployment --quiet --binstubs --shebang ruby-local-exec"
+#set :bundle_flags, "--deployment --quiet --binstubs --shebang ruby-local-exec"
+#gemfile.lock headaches http://stackoverflow.com/questions/3642085/make-bundler-use-different-gems-for-different-platforms
+set :bundle_flags, "--quiet --binstubs --shebang ruby-local-exec"
 set (:bundle_cmd) { "#{release_path}/bin/bundle" } # so that bundle works with rbenv
 #set (:bundle_dir) { "#{release_path}/.bin" } # cause I thought I was being smart but I wasn't the default shared is fine
 set :default_environment, {
@@ -62,7 +64,7 @@ namespace :deploy do
 	task :stop do ; end
 
 	task :restart, :roles => :app, :except => { :no_release => true } do 
-		run %Q{service unicorn restart}
+		run "#{try_sudo} service unicorn-wedding restart"
 	end
 # passenger restart
 #   task :restart, :roles => :app, :except => { :no_release => true } do
