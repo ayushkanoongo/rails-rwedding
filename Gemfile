@@ -30,6 +30,7 @@ group :production do
   #gem 'mongrel'
   #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
   gem 'sqlite3'
+  gem 'pg'
 
   # Use unicorn as the app server
   gem 'unicorn', '~> 4.3.0'

@@ -7,10 +7,11 @@
 - Ruby on Rails server setup on Ubuntu 11.04 with Nginx, Unicorn, Rbenv
 https://gist.github.com/1303554
 ### unicorn & cap setup
+https://www.engineyard.com/blog/2010/everything-you-need-to-know-about-unicorn/
 http://henriksjokvist.net/archive/2012/2/deploying-with-rbenv-and-capistrano/
-https://github.com/blog/517-unicorn
-http://github.com/blog/470-deployment-script-spring-cleaning
 http://ariejan.net/2011/09/14/lighting-fast-zero-downtime-deployments-with-git-capistrano-nginx-and-unicorn
+http://github.com/blog/517-unicorn
+http://github.com/blog/470-deployment-script-spring-cleaning
 
 ### how I deployed rwedding the first time
 	$ bundle exec cap deploy:setup
