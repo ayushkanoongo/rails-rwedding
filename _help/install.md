@@ -4,18 +4,25 @@
 ## Setup
 
 ### server deploy setup
-- Ruby on Rails server setup on Ubuntu 11.04 with Nginx, Unicorn, Rbenv
+
+Ruby on Rails server setup on Ubuntu 11.04 with Nginx, Unicorn, Rbenv
+
 https://gist.github.com/1303554
+
 ### unicorn & cap setup
+
 https://www.engineyard.com/blog/2010/everything-you-need-to-know-about-unicorn/
 http://henriksjokvist.net/archive/2012/2/deploying-with-rbenv-and-capistrano/
 http://ariejan.net/2011/09/14/lighting-fast-zero-downtime-deployments-with-git-capistrano-nginx-and-unicorn
 http://github.com/blog/517-unicorn
 http://github.com/blog/470-deployment-script-spring-cleaning
-# gemfiles and bundler is crazy see deploy.rb for other magic with rbenv
+
+### gemfiles and bundler is crazy see deploy.rb for other magic with rbenv
+
 http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
 
 ### how I deployed rwedding the first time
+
 	$ bundle exec cap deploy:setup
 	$ sudo chown -R wedding /home/wedding/website/
 	$ sudo chgrp -R staff /home/wedding/website/
@@ -25,14 +32,16 @@ http://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile
 	$ RAILS_ENV=production bundle exec rake db:seed
 
 ### help files
+
 http://37signals.com/svn/posts/2998-setting-up-a-new-machine-for-ruby-development
 http://refinerycms.com/guides/installation-prerequisites
 http://refinerycms.com/guides/getting-started
 http://toroid.org/ams/git-website-howto
 
 ## check the memory usage
-free -m
-ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
+
+	$ free -m
+	$ ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
 
 
 ## Mongrel hell on joyent

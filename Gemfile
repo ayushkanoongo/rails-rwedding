@@ -82,7 +82,7 @@ gem 'refinerycms', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 
 # andys stuff for markdown in radiantcms
-#gem 'maruku'
-gem 'glorify'
-gem 'sinatra'
+# gem 'maruku'
+# gem 'glorify'
+# gem 'sinatra'
 
