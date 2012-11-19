@@ -10,13 +10,12 @@ group :development, :test do
   gem 'rbenv-autohash'
   gem 'sqlite3'
 
-
   #gem 'capistrano', '~> 2.5.3' 
   gem 'capistrano'
-  # 'fast_remote_cache' when you get the change
-  # rails plugin install https://github.com/37signals/fast_remote_cache.git
 
-  gem 'unicorn', '~> 4.3.0'
+  gem 'pry'
+  # use 'fast_remote_cache' as the capistrano strat, cause we use git
+  # rails plugin install https://github.com/37signals/fast_remote_cache.git
 
   #gem 'guard'
   #gem 'guard-livereload'
@@ -43,9 +42,9 @@ group :assets do
   gem 'compass-rails'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'less-rails'
-  #gem 'libv8'
   gem 'therubyracer'
-  gem 'less-rails-bootstrap'
+  gem 'less-rails-bootstrap', '2.2.0' # freeze it hear due to myvariable.less hacks
+  #gem 'libv8'
   #gem 'turbo-sprockets-rails3'
   #gem 'twitter-bootstrap-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
