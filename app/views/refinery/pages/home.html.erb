@@ -1,8 +1,14 @@
-
+  <!-- <div id='site-title'>
+    <span id="title-us">Rachel Gold</span><span id="title-symbol">&amp;</span><span id="title-us">Andrew Stevens</span><br>
+    <span id="title-date">July 6th, 2013</span>
+  </div> -->
+  <div id="site-title">
+    <img src="<%= asset_path('andrew-and-rachels-wedding.png') %>" align="center" width="900" height="152" /><br>
+  </div>
   <div class="bodyrow row">
     <div class="span12">
       <div class="homecontent">
-        <%=raw @page.content_for(:body) %>
+        <%= raw @page.content_for(:body) %>
       </div>
     </div>
   </div>

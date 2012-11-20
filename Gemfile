@@ -13,6 +13,7 @@ group :development, :test do
   #gem 'capistrano', '~> 2.5.3' 
   gem 'capistrano'
 
+  #gem 'pg'
   gem 'pry'
   # use 'fast_remote_cache' as the capistrano strat, cause we use git
   # rails plugin install https://github.com/37signals/fast_remote_cache.git

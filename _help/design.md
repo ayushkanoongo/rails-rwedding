@@ -1,5 +1,23 @@
+todo
+- round corners save the date
+- fix online site, skin broken?
+- kortright-map-color.pdf
 
-Rachel Gold suggests
+
+
+
+## clear cache!
+/Users/andxyz/.rbenv/versions/1.9.3-p194/bin/ruby /Users/andxyz/Code/rails-rwedding/vendor/bin/rake assets:clean:all RAILS_ENV=development RAILS_GROUPS=assets
+rm -rf tmp/cache/assets tmp/cache/sass
+powder restart
+
+
+## Rachel Gold suggests
+
+http://offbeatbride.com/2007/12/wedding-invitation-wording-that-wont-make-you-barf
+https://www.weddingjojo.com/demo?theme=mist
+http://kortright.org/visitor-information/park-maps.dot
+
 http://www.vectorstock.com/i/composite/83,88/light-green-floral-background-vector-778388.jpg
 http://www.webdesignhot.com/wp-content/uploads/2012/06/Green-Floral-Background-Vector-Illustration.jpg
 http://images.clipartof.com/small/1110879-Clipart-Green-Floral-Background-With-Copyspace-1-Royalty-Free-Vector-Illustration.jpg

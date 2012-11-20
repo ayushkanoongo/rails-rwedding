@@ -31,10 +31,10 @@ RailsRwedding::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
-  #config.static_cache_control = "public, max-age=3600"
+  config.static_cache_control = "public, max-age=1"
   # Expands the lines which load the assets
-  config.assets.debug = true
-  config.assets.digest = true
+  config.assets.debug = false
+  config.assets.digest = false
 
   
 end

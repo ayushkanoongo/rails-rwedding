@@ -1,9 +1,11 @@
 
-  <h2 class="page-title"><%= raw @page.title %></h2>
+  <div id="site-title">
+    <img src="<%= asset_path('andrew-and-rachels-wedding.png') %>" align="center" width="900" height="152" /><br>
+  </div>
   <div class="bodyrow row">
     <div class="span12">
       <div class="content">
-        <%=raw @page.content_for(:body) %>
+        <%= raw @page.content_for(:body) %>
       </div>
     </div>
   </div>

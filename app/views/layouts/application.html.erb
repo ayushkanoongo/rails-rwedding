@@ -7,11 +7,6 @@
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <%= render '/refinery/header' -%>
     <div id="page_container" class="container">
-      <header id="header">
-        <h1 id='logo'>
-          <%= Refinery::Core.site_name %>
-        </h1>
-      </header>
       <section id="page">
         <%= yield %>
       </section>

@@ -2,7 +2,7 @@
 @import "twitter/bootstrap/reset.less";
 
 // Core variables and mixins
-//@import "twitter/bootstrap/variables.less"; 
+////@import "twitter/bootstrap/variables.less"; 
 @import "myvariables.less"; 
 @import "twitter/bootstrap/mixins.less";
 
@@ -60,7 +60,8 @@
 // give me linen
 body {
 	padding-top: 60px;
-	background-image: image-url('apple-linen.png');
+	background-image: image-url('beige-linen.jpg');
+	//background-image: image-url('apple-linen.png');
 	// background-image: image-url('blue-linen.jpg');
 }
 
@@ -70,6 +71,24 @@ body {
 	color: @pagefontcolor;
 	.border-radius(@pageradius);
 	// @include box-shadow(hsl(0, 0%, 40%) 5px 5px 5px);
+}
+
+div#site-title{
+	margin: 0px auto;
+	padding: 16px 0 10px 0;
+	text-align: center;
+}
+
+div#site-title hr{
+	width: 50%;
+	background-color: #ddd;
+	margin: auto;
+}
+
+#page #title-date  {
+	font-size:16px;
+	color: @site-title-date;
+	line-height: 1em;
 }
 
 #page .page-title {
