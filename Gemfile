@@ -13,7 +13,7 @@ group :development, :test do
   #gem 'capistrano', '~> 2.5.3' 
   gem 'capistrano'
 
-  #gem 'pg'
+  #gem 'pg', '~> 0.14.1'
   gem 'pry'
   # use 'fast_remote_cache' as the capistrano strat, cause we use git
   # rails plugin install https://github.com/37signals/fast_remote_cache.git
@@ -29,10 +29,10 @@ group :production do
   # mongrel as app server
   #gem 'mongrel'
   #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
-  gem 'pg'
+  gem 'pg', '~> 0.14.1'
 
   # Use unicorn as the app server
-  gem 'unicorn', '~> 4.3.0'
+  gem 'unicorn', '4.4.0'
   #gem 'capistrano-unicorn'
 end  
 
@@ -72,7 +72,7 @@ gem 'jquery-rails', '~> 2.0.0'
 # 
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.0.0'
+gem 'refinerycms', '~> 2.0.8'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 #  gem 'refinerycms-i18n', '~> 2.0.0'
