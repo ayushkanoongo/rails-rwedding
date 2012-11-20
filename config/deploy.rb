@@ -59,14 +59,19 @@ namespace :deploy do
       end
     end
 
-	task :start do ; end
+	task :start do 
+    run "service unicorn-wedding stop"; 
+  end
 
-	task :stop do ; end
+	task :stop do 
+    run "service unicorn-wedding stop"; 
+  end
 
 	task :restart, :roles => :app, :except => { :no_release => true } do 
 		#run "#{try_sudo} service unicorn-wedding restart"
-		run "service unicorn-wedding restart"
+		run "service unicorn-wedding restart";
 	end
+  
 # passenger restart
 #   task :restart, :roles => :app, :except => { :no_release => true } do
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
