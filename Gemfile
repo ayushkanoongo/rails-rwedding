@@ -7,6 +7,9 @@ gem 'rails', '~> 3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
+  gem 'newrelic_rpm'
+  #gem 'perftools.rb', just watching runtime stats
+
   ## dev database of choice
   gem 'sqlite3'
   #gem 'pg', '~> 0.14.1'
@@ -32,6 +35,9 @@ group :development, :test do
 end
 
 group :production do
+  gem 'newrelic_rpm'
+
+  ## prod database of choice
   gem 'pg', '~> 0.14.1'
 
   # Use unicorn as the app server

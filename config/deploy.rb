@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "new_relic/recipes"
 ## bundle magic for rbenv to work see bin/bundle also
 #set :bundle_flags, "--deployment --quiet --binstubs --shebang ruby-local-exec"
 #gemfile.lock headaches http://stackoverflow.com/questions/3642085/make-bundler-use-different-gems-for-different-platforms
@@ -41,6 +42,8 @@ set :scm_verbose, true
 
 namespace :deploy do
 
+  ## Hooks
+  
 	# before :"deploy:update", :"deploy:make_tmp_directories";
 
 	# task :make_tmp_directories, :roles => [ :app, :db, :web ] do
@@ -50,22 +53,20 @@ namespace :deploy do
 	# 	CMD
 	# end
 
-	before :"deploy:symlink", :"deploy:assets:precompile";
+  after "deploy:update", "newrelic:notice_deployment";
+
+	before "deploy:symlink", "deploy:assets:precompile";
 
 	namespace :assets do
-        task :precompile, :roles => :web, :except => { :no_release => true } do
-        	#run %Q{cd #{latest_release} && mkdir log && touch log/production.log}
-            run %Q{cd #{latest_release} && bundle exec rake assets:precompile --silent}
-      end
+      task :precompile, :roles => :web, :except => { :no_release => true } do
+      	##run %Q{cd #{latest_release} && mkdir log && touch log/production.log}
+        run %Q{cd #{release_path} && bundle exec rake assets:precompile --silent}
     end
-
-	task :start do 
-    run "service unicorn-wedding start"; 
   end
 
-	task :stop do 
-    run "service unicorn-wedding stop"; 
-  end
+	task :start do ; end
+
+	task :stop do ; end
 
 	task :restart, :roles => :app, :except => { :no_release => true } do 
 		#run "#{try_sudo} service unicorn-wedding restart"
