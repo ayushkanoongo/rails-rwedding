@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-# bundle magic for rbenv to work see bin/bundle also
+## bundle magic for rbenv to work see bin/bundle also
 #set :bundle_flags, "--deployment --quiet --binstubs --shebang ruby-local-exec"
 #gemfile.lock headaches http://stackoverflow.com/questions/3642085/make-bundler-use-different-gems-for-different-platforms
 set :bundle_flags, "--quiet --binstubs --shebang ruby-local-exec"
@@ -30,7 +30,7 @@ set :scm, :git # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perf
 set :branch, 'master'
 set :scm_verbose, true
 
-#diff deploy strats
+## different deploy strats
 	#set :deploy_via, :remote_cache
 
 	set :deploy_via, :export
@@ -60,7 +60,7 @@ namespace :deploy do
     end
 
 	task :start do 
-    run "service unicorn-wedding stop"; 
+    run "service unicorn-wedding start"; 
   end
 
 	task :stop do 
@@ -72,7 +72,7 @@ namespace :deploy do
 		run "service unicorn-wedding restart";
 	end
   
-# passenger restart
+## passenger restart
 #   task :restart, :roles => :app, :except => { :no_release => true } do
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 #   end

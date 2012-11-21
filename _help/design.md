@@ -3,7 +3,12 @@ todo
 - fix online site, skin broken?
 - kortright-map-color.pdf
 
-
+RSVP 
+Map 
+Story 
+Photos 
+Save the Date 
+Registry
 
 
 ## clear cache!

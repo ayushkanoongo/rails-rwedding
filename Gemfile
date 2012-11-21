@@ -7,17 +7,23 @@ gem 'rails', '~> 3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'rbenv-autohash'
+  ## dev database of choice
   gem 'sqlite3'
-
-  #gem 'capistrano', '~> 2.5.3' 
-  gem 'capistrano'
-
   #gem 'pg', '~> 0.14.1'
-  gem 'pry'
-  # use 'fast_remote_cache' as the capistrano strat, cause we use git
-  # rails plugin install https://github.com/37signals/fast_remote_cache.git
 
+  # a hook to rehash rbenv on gem installs
+  gem 'rbenv-autohash'
+  
+  ## for deploys
+  gem 'capistrano', '~> 2.13.5'
+  ## use 'fast_remote_cache' as the capistrano strat, because we use git
+  ## rails plugin install https://github.com/37signals/fast_remote_cache.git
+
+  ## for debug
+  # gem 'unicorn', '4.4.0'
+  gem 'pry'
+
+  ## one day I'll check out live reload and guard
   #gem 'guard'
   #gem 'guard-livereload'
   #gem 'rack-livereload'
@@ -26,14 +32,15 @@ group :development, :test do
 end
 
 group :production do
-  # mongrel as app server
-  #gem 'mongrel'
-  #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
   gem 'pg', '~> 0.14.1'
 
   # Use unicorn as the app server
   gem 'unicorn', '4.4.0'
-  #gem 'capistrano-unicorn'
+  #gem 'capistrano-unicorn' #maybe this is good? check it out sometime
+
+  # mongrel as app server
+  #gem 'mongrel'
+  #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
 end  
 
 # Gems used only for assets and not required
@@ -44,12 +51,11 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'less-rails'
   gem 'therubyracer'
-  gem 'less-rails-bootstrap', '2.2.0' # freeze it hear due to myvariable.less hacks
-  #gem 'libv8'
-  #gem 'turbo-sprockets-rails3'
-  #gem 'twitter-bootstrap-rails'
+  gem 'less-rails-bootstrap', '2.2.0' # freeze it here due to using myvariable.less hacks
+  #gem 'libv8' ## do I need this or ruby racer
+  #gem 'turbo-sprockets-rails3' #more sprockets config precompile hell
+  #gem 'twitter-bootstrap-rails' #no thanks
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -62,17 +68,14 @@ gem 'jquery-rails', '~> 2.0.0'
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# Deploy with Capistrano
-# gem 'capistrano'
-
 # To use debugger
 # gem 'debugger'
 
-# a hook to rehash rbenv on gem installs
-# 
+
+gem 'rb-readline'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.0.8'
+gem 'refinerycms', '2.0.8'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 #  gem 'refinerycms-i18n', '~> 2.0.0'
