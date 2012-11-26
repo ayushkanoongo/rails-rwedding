@@ -1,76 +1,34 @@
 // CSS Reset
-@import "twitter/bootstrap/reset.less";
+@import "twitter/bootstrap";
 
-// Core variables and mixins
-////@import "twitter/bootstrap/variables.less"; 
-@import "myvariables.less"; 
-@import "twitter/bootstrap/mixins.less";
+@page-white: 		hsl(0, 0%, 98%);
+@page-fontcolor: 	hsl(0, 0%, 15%);
+@page-radius: 		16px;
 
-// Grid system and page structure
-@import "twitter/bootstrap/scaffolding.less";
-@import "twitter/bootstrap/grid.less";
-@import "twitter/bootstrap/layouts.less";
-
-// Base CSS
-@import "twitter/bootstrap/type.less";
-@import "twitter/bootstrap/code.less";
-@import "twitter/bootstrap/forms.less";
-@import "twitter/bootstrap/tables.less";
-
-// Components: common
-@import "twitter/bootstrap/sprites.less";
-@import "twitter/bootstrap/dropdowns.less";
-@import "twitter/bootstrap/wells.less";
-@import "twitter/bootstrap/component-animations.less";
-@import "twitter/bootstrap/close.less";
-
-// Components: Buttons & Alerts
-@import "twitter/bootstrap/buttons.less";
-@import "twitter/bootstrap/button-groups.less";
-@import "twitter/bootstrap/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
-
-// Components: Nav
-@import "twitter/bootstrap/navs.less";
-@import "twitter/bootstrap/navbar.less";
-@import "twitter/bootstrap/breadcrumbs.less";
-@import "twitter/bootstrap/pagination.less";
-@import "twitter/bootstrap/pager.less";
-
-// Components: Popovers
-@import "twitter/bootstrap/modals.less";
-@import "twitter/bootstrap/tooltip.less";
-@import "twitter/bootstrap/popovers.less";
-
-// Components: Misc
-@import "twitter/bootstrap/thumbnails.less";
-@import "twitter/bootstrap/labels-badges.less";
-@import "twitter/bootstrap/progress-bars.less";
-@import "twitter/bootstrap/accordion.less";
-@import "twitter/bootstrap/carousel.less";
-@import "twitter/bootstrap/hero-unit.less";
-
-// Utility classes
-@import "twitter/bootstrap/utilities.less"; // Has to be last to override when necessary
-
-
-@pagewhite: 		hsl(0, 0%, 98%);
-@pageradius: 		16px;
-@pagefontcolor: 	hsl(0, 0%, 15%);
 
 // give me linen
 body.bootstrap-is-lame {
 	padding-top: 60px !important;
-	background-image: image-url('beige-linen.jpg');
-	//background-image: image-url('apple-linen.png');
+	background-image: image-url('kiss-me-flowers.png');
+	// background-image: image-url('burlap.jpg');
+	// background-image: image-url('beige-linen.jpg');
+	// background-image: image-url('apple-linen.png');
 	// background-image: image-url('blue-linen.jpg');
 }
 
 // offwhite bg, offblack text
 #page {
-	background: @pagewhite;
-	color: @pagefontcolor;
-	.border-radius(@pageradius);
+	.box-shadow(0 0 10px 4px rgba(0,0,0,.065));
+	background: @page-white;
+	color: @page-fontcolor;
+	.border-radius(@page-radius);
 	// @include box-shadow(hsl(0, 0%, 40%) 5px 5px 5px);
+}
+
+
+#page #yellow-bird #birdy {
+	float:right;
+	clear:both;
 }
 
 div#site-title{
@@ -109,8 +67,8 @@ div#site-title hr{
 		line-height: 1.8em;
 	}
 	img {
-		background: @pagewhite;
-		.border-radius(@pageradius);	
+		background: @page-white;
+		.border-radius(@page-radius);	
 		//border: 2px solid #dddddd;
 	}
 	.punchright {
@@ -146,3 +104,4 @@ footer {
 
 
 @import "twitter/bootstrap/responsive";
+@import "myvariables.less"; 

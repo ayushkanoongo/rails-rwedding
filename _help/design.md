@@ -1,7 +1,13 @@
 todo
-- round corners save the date
-- fix online site, skin broken?
+- <s>round corners save the date</s>
+- <s>fix online site, skin broken?</s>
+- <s>change menu colors</s>
 - kortright-map-color.pdf
+- fix: <li class="active"> for bootstrap
+  https://github.com/ghoppe/refinerycms-bootstrap/tree/master/app/views/refinery
+- fix the flower banner the line isn't perfect with flowers
+
+
 
 RSVP 
 Map 

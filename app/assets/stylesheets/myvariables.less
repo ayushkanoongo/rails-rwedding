@@ -1,3 +1,9 @@
+// wedding.andxyz.com colors
+@site-title-blue:      #03084C;
+@site-title-lightblue: #03084C;
+@site-title-date:      #03084C;
+@rachelBlue:           #03084C;
+
 //
 // Variables
 // --------------------------------------------------
@@ -17,10 +23,6 @@
 @grayLighter:           #eee;
 @white:                 #fff;
 
-@site-title-blue: #03084C;
-@site-title-lightblue: #03084C;
-@site-title-date: #03084C;
-@rachelBlue: #03084C;
 
 // Accent colors
 // -------------------------
@@ -163,37 +165,37 @@
 @navbarCollapseWidth:             979px;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       @rachelBlue;
-@navbarBackground:                darken(@rachelBlue, 5%);
-@navbarBorder:                    darken(@rachelBlue, 12%);
+@navbarBackgroundHighlight:       #5F9EBF;
+@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      @rachelBlue;
-@navbarLinkColor:                 @rachelBlue;
-@navbarLinkColorHover:            @rachelBlue;
-@navbarLinkColorActive:           @rachelBlue;
+@navbarText:                      #eee;
+@navbarLinkColor:                 #eee;
+@navbarLinkColorHover:            lighten(@navbarLinkColor,10%);
+@navbarLinkColorActive:           lighten(@navbarLinkColor,20%);
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@rachelBlue, 5%);
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
-@navbarBrandColor:                @rachelBlue;
+@navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
 @navbarInverseBackground:                @rachelBlue;
-@navbarInverseBackgroundHighlight:       @rachelBlue;
-@navbarInverseBorder:                    @rachelBlue;
+@navbarInverseBackgroundHighlight:       darken(@rachelBlue, 5%);
+@navbarInverseBorder:                    darken(@rachelBlue, 12%);
 
-@navbarInverseText:                      @rachelBlue;
-@navbarInverseLinkColor:                 @rachelBlue;
-@navbarInverseLinkColorHover:            @rachelBlue;
-@navbarInverseLinkColorActive:           @rachelBlue;
+@navbarInverseText:                      @grayLight;
+@navbarInverseLinkColor:                 @grayLight;
+@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
-@navbarInverseLinkBackgroundActive:      @rachelBlue;
+@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
 
-@navbarInverseSearchBackground:          lighten(@rachelBlue, 25%);
-@navbarInverseSearchBackgroundFocus:     @rachelBlue;
-@navbarInverseSearchBorder:              @rachelBlue;
+@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarInverseSearchBackgroundFocus:     @white;
+@navbarInverseSearchBorder:              @navbarInverseBackground;
 @navbarInverseSearchPlaceholderColor:    #ccc;
 
-@navbarInverseBrandColor:                @rachelBlue;
+@navbarInverseBrandColor:                @navbarInverseLinkColor;
 
 
 // Pagination
