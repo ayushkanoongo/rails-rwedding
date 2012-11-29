@@ -54,8 +54,8 @@ namespace :deploy do
 	# end
 
   after "deploy:update", "newrelic:notice_deployment";
-
-	before "deploy:symlink", "deploy:assets:precompile";
+  
+	before "deploy:create_symlink", "deploy:assets:precompile";
 
 	namespace :assets do
       task :precompile, :roles => :web, :except => { :no_release => true } do
@@ -64,13 +64,13 @@ namespace :deploy do
     end
   end
 
+  # wedding.andxyz.com start/stop/restart
 	task :start do ; end
-
 	task :stop do ; end
-
 	task :restart, :roles => :app, :except => { :no_release => true } do 
-		#run "#{try_sudo} service unicorn-wedding restart"
-		run "service unicorn-wedding restart";
+		run "#{try_sudo} service unicorn-wedding restart"
+		#run "service unicorn-wedding stop";
+    #run "service unicorn-wedding start";
 	end
   
 ## passenger restart

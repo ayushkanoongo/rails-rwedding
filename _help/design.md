@@ -5,7 +5,10 @@ todo
 - kortright-map-color.pdf
 - fix: <li class="active"> for bootstrap
   https://github.com/ghoppe/refinerycms-bootstrap/tree/master/app/views/refinery
+- white menu
 - fix the flower banner the line isn't perfect with flowers
+- yellowbird didn't appear on restart
+
 
 
 
