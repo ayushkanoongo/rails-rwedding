@@ -1,3 +1,7 @@
+# tips
+# https://help.github.com/articles/deploying-with-capistrano
+# http://ozmm.org/posts/easy_rails_asset_ids_with_git.html
+
 require "bundler/capistrano"
 require "new_relic/recipes"
 ## bundle magic for rbenv to work see bin/bundle also
@@ -10,6 +14,7 @@ set :default_environment, {
   'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 }
 default_run_options[:pty] = true # had trouble inputting passwords
+ssh_options[:forward_agent] = true
 
 set :application, "wedding"
 set :repository,  "ssh://deployer@deploy.andxyz.com/rwedding.git"
