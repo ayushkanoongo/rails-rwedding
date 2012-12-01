@@ -17,7 +17,7 @@ default_run_options[:pty] = true # had trouble inputting passwords
 ssh_options[:forward_agent] = true
 
 set :application, "wedding"
-set :repository,  "ssh://deployer@deploy.andxyz.com/rwedding.git"
+set :repository,  "ssh://deployer@deployer.andxyz.com/rwedding.git"
 set :app_dir, "/home/wedding/website/"
 
 
