@@ -2,6 +2,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 3.2.8'
+gem 'dotenv', :groups => [:development, :test]
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,9 +14,6 @@ group :development, :test do
   ## dev database of choice
   gem 'sqlite3'
   #gem 'pg', '~> 0.14.1'
-
-  # a hook to rehash rbenv on gem installs
-  gem 'rbenv-autohash'
   
   ## for deploys
   gem 'capistrano', '~> 2.13.5'
@@ -77,7 +75,12 @@ gem 'jquery-rails', '~> 2.0.0'
 # To use debugger
 # gem 'debugger'
 
+# a hook to rehash rbenv on gem installs
+gem 'rbenv-autohash'
+# for my markdown template
+gem 'redcarpet', '~> 2.2.2'
 
+# needed on production, for asset stuff
 gem 'rb-readline'
 
 # Refinery CMS

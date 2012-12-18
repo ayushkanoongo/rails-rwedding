@@ -7,7 +7,7 @@
 # Ignore bundler configs and such
 /.bundle
 /.bin
-/Gemfile.lock
+/bin
 
 # dont save passwords in repo
 #config/database.yml

@@ -1,16 +1,15 @@
-todo
-- <s>round corners save the date</s>
-- <s>fix online site, skin broken?</s>
-- <s>change menu colors</s>
+## todo
+
+- <del>round corners save the date</del>
+- <del>fix online site, skin broken?</del>
+- <del>change menu colors</del>
+- <del>fix: li class="active" for bootstrap https://github.com/ghoppe/refinerycms-bootstrap/tree/master/app/views/refinery</del>
+- <del>fix the flower banner the line isn't perfect with flowers</del>
+- <del>white menu</del>
+  
+- capistrano + unicorn (why yellowbird didn't appear on restart)
 - kortright-map-color.pdf
-- fix: <li class="active"> for bootstrap
-  https://github.com/ghoppe/refinerycms-bootstrap/tree/master/app/views/refinery
-- white menu
-- fix the flower banner the line isn't perfect with flowers
-- yellowbird didn't appear on restart
-
-
-
+- jquery masonry http://masonry.desandro.com/docs/intro.html
 
 RSVP 
 Map 
@@ -19,12 +18,10 @@ Photos
 Save the Date 
 Registry
 
-
 ## clear cache!
 /Users/andxyz/.rbenv/versions/1.9.3-p194/bin/ruby /Users/andxyz/Code/rails-rwedding/vendor/bin/rake assets:clean:all RAILS_ENV=development RAILS_GROUPS=assets
 rm -rf tmp/cache/assets tmp/cache/sass
 powder restart
-
 
 ## Rachel Gold suggests
 
