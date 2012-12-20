@@ -23,9 +23,9 @@ set :app_dir, "/home/wedding/website/"
 
 set :user,  "wedding"
 set :group, "staff"
-role :web, "deploy.andxyz.com"                          # Your HTTP server, Apache/etc
-role :app, "deploy.andxyz.com"                          # This may be the same as your `Web` server
-role :db,  "deploy.andxyz.com", :primary => true # This is where Rails migrations will run
+role :web, "wedding.andxyz.com"                          # Your HTTP server, Apache/etc
+role :app, "wedding.andxyz.com"                          # This may be the same as your `Web` server
+role :db,  "wedding.andxyz.com", :primary => true # This is where Rails migrations will run
 #role :db,  "wedding.andxyz.com"
 
 
