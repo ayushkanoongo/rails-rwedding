@@ -1,9 +1,9 @@
 
   <div class="bodyrow row">
     <div class="span12">
-      <div class="homecontent">
+      <div class="content markdown-content">
         <%=
-          text = @page.content_for(:body)
+          content = @page.content_for(:body)
           # redcarpet2 options from my octopress site writings.andxyz.com
           # ["hard_wrap", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables", "lax_spacing"]
           options = { 
@@ -17,11 +17,12 @@
                       :tables => true,
                       :lax_spacing => true
                     } 
-          template = Tilt::RedcarpetTemplate.new(nil, options) { text }
-          output = template.render
-          raw output
+          template = Tilt::RedcarpetTemplate.new(nil, options) { content }
+          content_as_markdown = template.render
 
+          raw content_as_markdown
         -%>
+        
       </div>
     </div>
   </div>
