@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require_tree .
 //= require twitter/bootstrap
-//= require ../../../vendor/assets/javascripts/jwplayer/jwplayer.js
-//= require ../../../vendor/assets/javascripts/jwplayer/jwplayer.html5.js
+//= require jwplayer/jwplayer.js
+//= require jwplayer/jwplayer.html5.js
 
