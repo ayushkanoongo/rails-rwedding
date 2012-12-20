@@ -40,7 +40,7 @@ Refinery::Pages.configure do |config|
 
   # config.layout_template_whitelist = ["application"]
 
-  config.view_template_whitelist = ["show", "home", "markdown", "save-the-date"]
+  config.view_template_whitelist = ["show", "home", "markdown", "save-the-date", "photos"]
 
   # config.use_layout_templates = false
 

@@ -2,12 +2,10 @@ jQuery.noConflict
 $ = jQuery
 
 $(window).load(->
-  $('#page div.content').masonry
+  $('#page div.photos-content').masonry
     itemSelector : '.griditem'
     columnWidth : 280
 
-    $("img.lazy").lazyload()
+    $("div.photos-content img.lazy").lazyload()
   )
-
-  
 
