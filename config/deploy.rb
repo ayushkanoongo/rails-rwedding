@@ -1,3 +1,8 @@
+# remember to:
+# ssh-agent 
+# ssh-add ~/.ssh/andxyz-deployer
+# ssh-add ~/.ssh/andxyz-wedding
+
 # tips
 # https://help.github.com/articles/deploying-with-capistrano
 # http://ozmm.org/posts/easy_rails_asset_ids_with_git.html
@@ -14,10 +19,11 @@ set :default_environment, {
   'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 }
 default_run_options[:pty] = true # had trouble inputting passwords
-ssh_options[:forward_agent] = true
+# ssh_options[:forward_agent] = false
+set :ssh_options, {:forward_agent => true}
 
 set :application, "wedding"
-set :repository,  "ssh://deployer@deployer.andxyz.com/rwedding.git"
+set :repository,  "deployer@deploy.andxyz.com:/rwedding.git"
 set :app_dir, "/home/wedding/website/"
 
 
@@ -64,7 +70,7 @@ namespace :deploy do
 
 	namespace :assets do
       task :precompile, :roles => :web, :except => { :no_release => true } do
-      	##run %Q{cd #{latest_release} && mkdir log && touch log/production.log}
+      	#run %Q{cd #{latest_release} && mkdir log && touch log/production.log}
         run %Q{cd #{release_path} && bundle exec rake assets:precompile --silent}
     end
   end
