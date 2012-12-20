@@ -1,4 +1,4 @@
 Répondez s'il vous plaît
 
-We'll be sending these out soon.
+We will be sending these out closer to the wedding date.
 

@@ -36,6 +36,9 @@ jwplayer("video-story").setup({
 <div id="video-story" class="video-story">
 </div>
 
+http://www.longtailvideo.com/support/jw-player/jw-player-for-flash-v5/15995/jw-embedder-reference-guide
+http://www.longtailvideo.com/support/forums/jw-player/licensing-questions/9651/jw-player-44-can-i-remove-the-new-watermark/
+http://www.longtailvideo.com/support/open-video-ads/22834/configuring-the-control-bar/
 
 
 
