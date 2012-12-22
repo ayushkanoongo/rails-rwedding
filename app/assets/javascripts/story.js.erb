@@ -1,7 +1,8 @@
 jQuery(document).ready(function(){
   jwplayer('video-story').setup({
-    flashplayer: '/assets/jwplayer/jwplayer.flash.swf',
-    file: '/assets/wedding-talk.mp4',
+    flashplayer: '<%= asset_path("jwplayer/jwplayer.flash.swf") %>',
+    image: '<%= asset_path("video-snapshot.png") %>',
+    file: '<%= asset_path("wedding-talk.mp4") %>',
     height: 473,
     width: 840,
     controlbar: {position:'over', 
