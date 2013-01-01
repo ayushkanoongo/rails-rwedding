@@ -1,9 +1,4 @@
 
-## isnt working
-service unicorn-wedding start 
-## use
-bundle exec unicorn -c /home/wedding/website/current/config/unicorn.rb -E production -D
-
 
 ## http://theadmin.org/articles/capistrano-variables/
  
@@ -34,4 +29,10 @@ So I don’t forget them when I need them, I’ll document them here:
     previous_revision – revision id of the previous release
     run_method – either :run or :sudo depending on if :use_sudo is set
     latest_release – release path or the current release depending on if the current symlink is valid
+
+
+## isnt working
+service unicorn-wedding start 
+## use
+bundle exec unicorn -c /home/wedding/website/current/config/unicorn.rb -E production -D
 

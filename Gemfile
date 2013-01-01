@@ -14,6 +14,10 @@ group :development, :test do
   ## dev database of choice
   gem 'sqlite3'
   #gem 'pg', '~> 0.14.1'
+
+  gem "letter_opener"
+
+  gem 'quiet_assets'
   
   ## for deploys
   gem 'capistrano', '~> 2.13.5'
@@ -23,6 +27,7 @@ group :development, :test do
   ## for debug
   # gem 'unicorn', '4.4.0'
   gem 'pry'
+  gem 'sextant' #http://wedding.andxyz.dev/rails/routes
 
   ## one day I'll check out live reload and guard
   #gem 'guard'
@@ -45,6 +50,9 @@ group :production do
   # mongrel as app server
   #gem 'mongrel'
   #gem install daemons gem_plugin mongrel mongrel_cluster --include-dependencies --no-rdoc --no-ri
+  
+  # Limit requests to 30 seconds
+  gem 'rack-timeout'
 end  
 
 # Gems used only for assets and not required
