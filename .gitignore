@@ -10,7 +10,7 @@
 /bin
 
 # dont save passwords in repo
-#config/database.yml
+config/database.yml
 
 /vendor
 

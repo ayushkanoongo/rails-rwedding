@@ -1,0 +1,29 @@
+
+  <div id="site-title">
+    <img src="<%= asset_path('andrew-and-rachels-wedding.png') %>" align="center" width="900" height="120" /><br>
+  </div>
+
+  <div class="bodyrow row">
+    <div class="span12">
+      <div class="content">
+        <%= raw @page.content_for(:body) %>
+
+        <div id="video-story">
+          <video id="wedding_vid" class="video-js vjs-default-skin" controls 
+            preload="auto" 
+            width="840" 
+            height="473" 
+            poster="<%= asset_path('video-snapshot.png') %>">
+              <source src="<%= asset_path('wedding-talk.mp4') %> type='video/mp4'>
+          </video>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="yellow-bird">
+    <div id="birdy">
+      <img src="<%= asset_path('yellow-bird.png') %>" align="center" width="180" height="128" />
+    </div>
+  </div>

@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
   if($('#video-story').length !== 0) {
     jwplayer('video-story').setup({
-      flashplayer: '<%= asset_path("jwplayer/jwplayer.flash.swf") %>',
+      flashplayer: '<%= asset_path("jwplayer.flash.swf") %>',
       image: '<%= asset_path("video-snapshot.png") %>',
       file: '<%= asset_path("wedding-talk.mp4") %>',
       height: 473,
@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
       controlbar: {position:'over', 
                    idlehide: false,
                    visible: true},
-      logo: {file:'assets/mspg-logo.png'}
+      logo: {file: '<%= asset_path("assets/mspg-logo.png") %>'}
     });
   }
 });
