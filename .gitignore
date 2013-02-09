@@ -9,8 +9,8 @@
 /.bin
 /bin
 
-# dont save passwords in repo
-config/database.yml
+# FIXME dont save passwords in repo
+# config/database.yml
 
 /vendor
 
