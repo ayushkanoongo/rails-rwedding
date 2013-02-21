@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jwplayer/jwplayer.js
-//= require jwplayer/jwplayer.html5.js
+//= require jwplayer.js
+//= require jwplayer.html5.js
 //= require_tree .
 

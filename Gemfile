@@ -1,7 +1,7 @@
 #require 'rubygems' #hack to fix bundle viz??
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.8'
+gem 'rails', '3.2.8'
 gem 'dotenv', :groups => [:development, :test]
 
 # Bundle edge Rails instead:
@@ -27,7 +27,13 @@ group :development, :test do
   ## for debug
   # gem 'unicorn', '4.4.0'
   gem 'pry'
-  gem 'sextant' #http://wedding.andxyz.dev/rails/routes
+  gem 'sextant' # http://wedding.andxyz.dev/rails/routes
+
+  # better_errors thanks to http://railscasts.com/episodes/402-better-errors-railspanel
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  # railspanel with https://github.com/asuth/subl-handler and https://github.com/dejan/rails_panel
+  gem 'meta_request' 
 
   ## one day I'll check out live reload and guard
   #gem 'guard'

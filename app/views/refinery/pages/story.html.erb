@@ -6,17 +6,10 @@
   <div class="bodyrow row">
     <div class="span12">
       <div class="content">
-        <%= raw @page.content_for(:body) %>
-
-        <div id="video-story">
-          <video id="wedding_vid" class="video-js vjs-default-skin" controls 
-            preload="auto" 
-            width="840" 
-            height="473" 
-            poster="<%= asset_path('video-snapshot.png') %>">
-              <source src="<%= asset_path('wedding-talk.mp4') %> type='video/mp4'>
-          </video>
+        <div id="video-story" class="video-story">
         </div>
+
+        <%= raw @page.content_for(:body) %>
         
       </div>
     </div>
