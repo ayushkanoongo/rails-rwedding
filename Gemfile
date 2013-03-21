@@ -15,7 +15,7 @@ group :development, :test do
   gem 'sqlite3'
   #gem 'pg', '~> 0.14.1'
 
-  gem "letter_opener"
+  gem 'letter_opener'
 
   gem 'quiet_assets'
   
