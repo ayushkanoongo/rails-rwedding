@@ -34,5 +34,12 @@ So I don’t forget them when I need them, I’ll document them here:
 ## isnt working
 service unicorn-wedding start 
 ## use
-bundle exec unicorn -c /home/wedding/website/current/config/unicorn.rb -E production -D
-
+export USER=wedding
+export PATH=/home/$USER/.rbenv/bin:/home/$USER/.rbenv/shims:$PATH
+export DAEMON=unicorn
+export DAEMON_OPTS="-c /home/$USER/website/current/config/unicorn.rb -E production -D"
+export NAME=unicorn
+export DESC="Unicorn app for $USER"
+export PID=/home/$USER/website/shared/pids/unicorn.pid
+cd /home/$USER/website/current/
+bundle exec $DAEMON $DAEMON_OPTS

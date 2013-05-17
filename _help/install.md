@@ -44,11 +44,8 @@ http://toroid.org/ams/git-website-howto
 	$ ps -eo pmem,pcpu,rss,vsize,args | sort -k 1 -r | less
 
 
-## Mongrel hell on joyent
+## Mongrel hell on joyent (I have since moved to linode, maybe one day digitalocean.com, $5/month is tough to beat. I pay $20, for this site and some others on one vps)
 http://discuss.joyent.com/viewtopic.php?id=26633
-
-
-
 
 
 ## Ideas 
