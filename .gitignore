@@ -12,7 +12,7 @@
 # FIXME dont save passwords in repo
 # config/database.yml
 
-/vendor
+/vendor/gems/
 
 # assets let the precompile happen serverside
 .sass-cache/

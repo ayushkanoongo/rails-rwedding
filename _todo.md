@@ -23,7 +23,8 @@ bundle exec $DAEMON $DAEMON_OPTS
 ```
 
 #### clear cache!
-/Users/andxyz/.rbenv/versions/1.9.3-p194/bin/ruby /Users/andxyz/Code/rails-rwedding/vendor/bin/rake assets:clean:all RAILS_ENV=development RAILS_GROUPS=assets
+/Users/andxyz/.rbenv/versions/1.9.3-p194/bin/ruby /Users/andxyz/Code/rails-rwedding/vendor/bin/rake
+be rake assets:clean:all RAILS_ENV=development RAILS_GROUPS=assets
 rm -rf tmp/cache/assets tmp/cache/sass
 powder restart
 
