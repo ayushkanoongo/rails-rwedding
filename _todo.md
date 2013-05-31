@@ -1,5 +1,10 @@
 
-## Todo
+# Todo
+
+- [ ] Rehersal Dinner artwork
+- [ ] Rehersal Dinner email
+
+## Server stuff
 
 1) fix the init.d
 ```bash
@@ -17,9 +22,30 @@ cd /home/$USER/website/current/
 bundle exec $DAEMON $DAEMON_OPTS
 ```
 
-2) dunno
+#### clear cache!
+/Users/andxyz/.rbenv/versions/1.9.3-p194/bin/ruby /Users/andxyz/Code/rails-rwedding/vendor/bin/rake assets:clean:all RAILS_ENV=development RAILS_GROUPS=assets
+rm -rf tmp/cache/assets tmp/cache/sass
+powder restart
 
-## Random tips
+## design and layout
+
+- [x] round corners save the date</del>
+- [x] fix online site, skin broken?
+- [x] change menu colors
+- [x] fix: li class="active" for bootstrap https://github.com/ghoppe/refinerycms-bootstrap/tree/master/app/views/refinery
+- [x] fix the flower banner the line isn't perfect with flowers
+- [x] white menu
+  
+- [x] capistrano + unicorn (why yellowbird didn't appear on restart)
+- [x] kortright-map-color.pdf
+- [x] jquery masonry http://masonry.desandro.com/docs/intro.html
+
+- [x] RSVP 
+- [x] Map 
+- [x] Story 
+- [x] Photos 
+- [x] Save the Date 
+- [x] Registry
 
 ### refinery
   
@@ -30,13 +56,12 @@ bundle exec $DAEMON $DAEMON_OPTS
  - http://www.flickr.com/services/api/misc.urls.html
  - http://www.pixellatedvisions.com/2009/04/06/integrating-flickr-into-your-rails-website
 
-
 ### theme
 
- - https://github.com/radiant/radiant/wiki
+ - https://github.com/refinery/refinerycms/wiki
  - view-source:http://twitter.github.com/bootstrap/examples/starter-template.html
  - http://twitter.github.com/bootstrap/examples/starter-template.html
- - http://designshack.net/tutorialexamples/bootstrap/index.html
+ - https://wrapbootstrap.com/
 
 ### _menu.html.erb TB headaches in the menu 
 
