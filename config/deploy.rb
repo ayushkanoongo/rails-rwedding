@@ -2,6 +2,7 @@
 # ssh-agent 
 # ssh-add ~/.ssh/andxyz-deployer
 # ssh-add ~/.ssh/andxyz-wedding
+# be cap deploy
 
 # tips
 # https://help.github.com/articles/deploying-with-capistrano
