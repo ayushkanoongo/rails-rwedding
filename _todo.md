@@ -1,12 +1,15 @@
 
 # Todo
 
-- [ ] Rehersal Dinner artwork
-- [ ] Rehersal Dinner email
+- [x] Rehersal Dinner artwork
+- [x] Rehersal Dinner email
+- [x] Rehersal Dinner google form
 
 ## Server stuff
 
-1) fix the init.d
+1) check config/deploy.rb for some deploy tips
+
+2) fix the init.d
 ```bash
 vi /etc/init.d/unicorn-wedding
 ```
