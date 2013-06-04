@@ -1,15 +1,14 @@
 jQuery(document).ready(function(){
   if($('#video-story').length !== 0) {
     jwplayer('video-story').setup({
-      flashplayer: '<%= asset_path("jwplayer.flash.swf") %>',
+      flashplayer: '<%= asset_path("jwplayer/jwplayer.flash.swf") %>',
       image: '<%= asset_path("video-snapshot.png") %>',
-      file: '<%= asset_path("wedding-talk.mp4") %>',
-      height: 473,
-      width: 840,
+      file: '<%= asset_path("our-story.mp4") %>',
+      height: 506,
+      width: 900,
       controlbar: {position:'over', 
                    idlehide: false,
                    visible: true},
-      logo: {file: '<%= asset_path("assets/mspg-logo.png") %>'}
     });
   }
 });
