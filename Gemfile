@@ -12,8 +12,8 @@ group :development, :test do
   #gem 'perftools.rb', just watching runtime stats
 
   ## dev database of choice
-  gem 'sqlite3'
-  #gem 'pg', '~> 0.14.1'
+  #gem 'sqlite3'
+  gem 'pg', '~> 0.14.1'
 
   gem 'letter_opener'
 
